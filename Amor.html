@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Amo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffe6e6;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+
+        .corazon {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transform: rotate(45deg);
+            margin-bottom: 20px;
+        }
+
+        .corazon::before,
+        .corazon::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .corazon::before {
+            left: 50px;
+            top: 0;
+        }
+
+        .corazon::after {
+            top: 50px;
+            left: 0;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #ff4d4d;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="corazon"></div>
+    <h1>Te Amo</h1>
+</body>
+</html>
